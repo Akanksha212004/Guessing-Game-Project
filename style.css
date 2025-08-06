@@ -8,44 +8,63 @@ body{
   /* margin: auto; */
   background-color: rgb(245, 209, 215);
   font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .container{
-  height: 300px;
-  width: 500px;
+  /* height: 300px; */
+  width: 90%;
   border: 3px solid rgb(244, 180, 191);
   border-radius: 15px;
   background-color: rgb(249, 194, 203);
   box-shadow: 2px 4px 6px rgb(244, 180, 191);
-  
+  max-width: 500px;
+  padding: 20px;
+  margin: auto;
 }
 
 #heading1{
-  margin: 1.5rem;
-  padding: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
   color: #333333;
+  font-size: 1.5rem;
 }
 
 #input{
   display: block;
-  margin: auto;
-  padding: 1rem;
-  margin: 1.5rem 50% 2.5rem 20%;
+  margin: 1rem auto;
+  padding: 0.8rem;
+  /* margin: 1.5rem 50% 2.5rem 20%; */
   border-radius: 10px;
   color: #6b0f1a;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   border: 3px solid rgb(244, 172, 184);
   background-color: rgb(244, 209, 215);
   font-weight: 700;
   text-align: center;
+  width: 90%;
+  max-width: 300px;
+}
+
+button{
+  display: inline-block;
+  height: 40px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  margin: 5px;
+  width: 45%; /* Buttons side by side */
+  max-width: 150px;
 }
 
 #btn{
-  height: 40px;
+  /* height: 40px;
   width: 150px;
   font-size: 1.25rem;
   padding: 6px 4px 6px 4px;
-  border-radius: 10px;
+  border-radius: 10px; */
   background-color: #ef708a;
   color: white;
 }
@@ -55,65 +74,75 @@ body{
 }
 
 .game-screen{
-  background-color: rgb(249, 194, 203);
+  /* background-color: rgb(249, 194, 203);
   border: 3px solid rgb(244, 180, 191);
   border-radius: 15px;
   box-shadow: 2px 4px 6px rgb(244, 180, 191);
   height: 300px;
   width: 500px;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem; */
+  width: 90%;
+  border: 3px solid rgb(244, 180, 191);
+  border-radius: 15px;
+  background-color: rgb(249, 194, 203);
+  box-shadow: 2px 4px 6px rgb(244, 180, 191);
+  max-width: 500px;
+  padding: 20px;
+  margin: auto;
 }
 
 #guessInput{
-  padding: 1rem;
+  display: block;
+  margin: 1rem auto;
+  padding: 0.8rem;
   border-radius: 10px;
+  color: #6b0f1a;
+  font-size: 1.1rem;
   border: 3px solid rgb(244, 172, 184);
   background-color: rgb(244, 209, 215);
-  font-size: 1.25rem;
-  margin: 1rem auto;
-  display: block;
-  color: #6b0f1a;
   font-weight: 700;
   text-align: center;
+  width: 90%;
+  max-width: 300px;
 }
 
 #quitBtn{
   background-color: #444;
   color: white;
-  height: 35px;
+  /* height: 35px;
   width: 150px;
   font-size: 1rem;
   padding: 6px 4px 6px 4px;
   border-radius: 10px;
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 0; */
 }
 
 #submitBtn{
   background-color: #ef708a;
   color: white;
-  height: 35px;
+  /* height: 35px;
   width: 120px;
   font-size: 1rem;
   padding: 6px 4px 6px 4px;
   border-radius: 10px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 10px; */
 }
 
 #restartBtn{
   background-color: #f64e70;
   color: white;
-  height: 35px;
+  /* height: 35px;
   width: 120px;
   font-size: 1rem;
   padding: 6px 4px 6px 4px;
   border-radius: 10px;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0 0; */
 }
 
 #message{
   margin: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #333;
 }
@@ -123,7 +152,21 @@ body{
 }
 
 #guessHeading{
-  margin: 1rem;
+  /* margin: 1rem;
   padding: 1.5rem;
+  color: #333333; */
+  margin: 1rem;
+  padding: 1rem;
   color: #333333;
+  font-size: 1.5rem;
+}
+
+@media(max-width: 600px){
+  #heading1, #guessHeading{
+    font-size: 1.2 rem;
+  }
+  button{
+    width: 90%;
+    max-width: none;
+  }
 }
